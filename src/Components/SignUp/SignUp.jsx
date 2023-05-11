@@ -46,7 +46,7 @@ const SignUp = () => {
                 country: country.current.value
             };
             try {
-                const res = await axios.post("https://resume-backend-zjrh.onrender.com/auth/register", user);
+                const res = await axios.post("https://resume-backend-zjrh.onrender.com/api/auth/register", user);
                 console.log(res);
                 navigate("/resume");
             } catch (err) {
