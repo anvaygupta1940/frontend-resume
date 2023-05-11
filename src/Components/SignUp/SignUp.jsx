@@ -48,7 +48,7 @@ const SignUp = () => {
             try {
                 const res = await axios.post("https://resume-backend-zjrh.onrender.com/api/auth/register", user);
                 console.log(res);
-                navigate("/resume");
+                navigate("https://resume-frontend/resume");
             } catch (err) {
                 console.log(err);
             }
